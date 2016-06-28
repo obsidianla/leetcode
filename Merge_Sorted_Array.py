@@ -21,3 +21,4 @@ class Solution(object):
             nums1[end]=nums2[j]
             end -=1
             j -=1
+## merge from the end 
