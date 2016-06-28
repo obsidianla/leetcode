@@ -16,3 +16,5 @@ class Solution(object):
             else: 
                 map[nums[i]] = i
         return False
+## The trick is that when you find the nums[j] which is equal to nums[i], 
+## the index stored in dict is still the index of num[i]
