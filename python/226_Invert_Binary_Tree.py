@@ -1,4 +1,4 @@
-// recursive version
+## recursive version
 class Solution(object):
     def invertTree(self, root):
         """
@@ -18,7 +18,7 @@ class Solution(object):
         
         return root;
         
-// non recursive, using queue
+## non recursive, using queue
 
 class Solution(object):
     def invertTree(self, root):
