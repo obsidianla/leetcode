@@ -32,3 +32,34 @@ public int majorityElement(int[] nums) {
         }
         return result;
     }
+    
+// method 3 
+// quicksort, sort the array first, then the item at len/2 should be the result
+public int majorityElement(int[] num) {
+        int len = num.length;
+        quickSort(num,0,len-1);
+        return num[len/2];
+    }
+    public void quickSort(int[] num,int low,int high){
+        if (low>=high) return;
+        int i=low;
+        int j=high;
+        int pivot = num[(low+high)/2];
+        while (i<=j){
+            while (num[j]>pivot){j--;}
+            
+            while (num[i]<pivot){i++;}
+            if(i<=j){
+                int tmp = num[i];
+                num[i] = num[j];
+                num[j] = tmp;
+                i++;
+                j--;
+            }
+        }
+        if(low < j)
+            quickSort(num,low,j);
+        if (high >i)
+            quickSort(num,i,high);
+
+    }
