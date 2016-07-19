@@ -1,3 +1,5 @@
+
+## creat a dummy linked list,then insert a node each time
 def reverseList(self, head):
         """
         :type head: ListNode
