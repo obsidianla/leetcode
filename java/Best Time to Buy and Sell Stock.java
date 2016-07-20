@@ -1,3 +1,6 @@
+// set two node, fast and slow, if fast catches up slow, then there exists a loop
+
+
 public int maxProfit(int[] prices) {
         if(prices.length == 0 ||prices.length == 1)
             return 0;
