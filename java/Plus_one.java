@@ -1,3 +1,5 @@
+// Acturally, the idea directly comes from addition, add begins from right
+
 public int[] plusOne(int[] digits) {
         
         int l = digits.length;
