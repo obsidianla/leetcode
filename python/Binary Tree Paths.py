@@ -9,8 +9,7 @@ def binaryTreePaths(self, root):
         return result
         
     def helper(self, root, result,res):
-        if root is None:
-            return
+
         if root.left is None and root.right is None:
             result.append(res)
             return
