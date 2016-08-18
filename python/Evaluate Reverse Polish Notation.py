@@ -1,3 +1,9 @@
+###  also known as postfix notation,
+###  every operator follows all of its operands
+###  use a stack to store all operands, if encounter operator, then pop two number
+
+
+
 def evalRPN(self, tokens):
         """
         :type tokens: List[str]
