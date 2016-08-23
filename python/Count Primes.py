@@ -1,3 +1,6 @@
+#sieve of Eratosthenes
+
+
 import math
 
 class Solution(object):
